@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="css/metro-bootstrap.css" />
+<script type="text/javascript" src="js/jquery-1.8.0.js"></script>
+<script type="text/javascript" src="js/bookSearch.js"></script>
+<title>书籍搜索</title>
+</head>
+
+<body class="container">
+<br />
+	<div class="row">
+    	<div class="span12">
+        	<div class="form-search">
+              <input id="search" type="text" class="input-medium search-query" />
+              <button type="button" class="btn btn-inverse btn-small" onClick="search_books()"> 搜寻 </button>
+            </div>
+            <br />
+        </div>
+    </div>
+	<div class="row">
+    	<div class="span3">
+        	<img id="image" src="" />
+        </div>
+    	<div class="span3">
+        	<h2 id="title">title</h2>
+            <h4 id="author">author</h4>
+            <h4 id="translator">translator</h4>
+            <h4 id="publisher">publisher</h4>
+            <h4 id="pubdate">pubdate</h4>
+            <h4 id="price">price</h4>
+            <!--h4 id="binding">binding</h4>
+            <h4 id="pages">pages</h4>
+            <h4 id="isbn10">isbn10</h4>
+            <h4 id="isbn13">isbn13</h4-->
+        </div>
+        <div class="span6">
+        	<a href="javascript:void(0)" class="label label-info">作者简介</a>
+            <pre id="author_intro"></pre>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="span12">
+        	<fieldset id="tags"></fieldset>
+        </div>    	
+    </div>
+	<br />
+    <div class="row">
+    	<div class="span12">
+        	<a href="javascript:void(0)" class="label label-info">书籍简介</a>
+            <pre id="summary"></pre>
+        </div>        
+    </div>
+    <div style="height:2000px;"></div>
+</body>
+</html>
